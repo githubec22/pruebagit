@@ -9,5 +9,6 @@ jobs:
     steps:
       - uses: actions/checkout@v4
       
-      - name: Test command
+      - name: Mostrar informacion
         run: echo "Workflow funcionando"
+        docker build -t dockermazin/hola-mundo:5 .
