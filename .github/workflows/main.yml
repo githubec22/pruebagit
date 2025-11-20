@@ -8,12 +8,19 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
       - uses: actions/checkout@v4
-      
-      - name: Mostrar informacion y construir imagen
+
+      - name: Docker Login
+        uses: docker/login-action@v3.6.0
+        with:
+          username: dockermazin
+          password: dckr_pat_aqrNXnzh-VqsfUtxI9BKGJXKsV4
+
+      - name: Build Docker Image
         run: |
           echo "Building Docker image..."
           docker build -t dockermazin/hola-mundo:5 .
-      - name: Mostrar informacion y construir imagen
+
+      - name: Push Docker Image
         run: |
-          echo "Push Docker image ...."
+          echo "Pushing Docker image..."
           docker push dockermazin/hola-mundo:5
