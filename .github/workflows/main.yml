@@ -11,5 +11,9 @@ jobs:
       
       - name: Mostrar informacion y construir imagen
         run: |
-          echo "Workflow funcionando"
+          echo "Building Docker image..."
           docker build -t dockermazin/hola-mundo:5 .
+      - name: Mostrar informacion y construir imagen
+        run: |
+          echo "Push Docker image ...."
+          docker push dockermazin/hola-mundo:5
