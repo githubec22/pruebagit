@@ -17,10 +17,10 @@ jobs:
 
       - name: Build Docker Image
         run: |
-          echo "Building Docker image..."
-          docker build -t dockermazin/hola-mundo:5 .
+          echo "Building Docker image...."
+          docker build -t dockermazin/hola-mundo:6 .
 
       - name: Push Docker Image
         run: |
           echo "Pushing Docker image..."
-          docker push dockermazin/hola-mundo:5
+          docker push dockermazin/hola-mundo:6
