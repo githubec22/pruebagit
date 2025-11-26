@@ -4,7 +4,7 @@ FROM python:3.12-alpine
 WORKDIR /app
 
 RUN echo "Ejecutando instrucciones adicionales..."
-# Copiar el archivo de la aplicación
+# Copiar el archivo de la aplicación-2
 COPY app.py .
 
 # Exponer el puerto 3000
