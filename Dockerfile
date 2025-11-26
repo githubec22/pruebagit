@@ -1,5 +1,5 @@
 # IMAGEN BASE
-FROM python:3.14-alphine
+FROM python:3.12-alpine
 # INSTRUCCIONES
 WORKDIR /app
 
