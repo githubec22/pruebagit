@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 """
+<<<<<<< HEAD
 Servidor HTTP simple que responde Hola Mundo
 """
 import http.server
@@ -22,3 +23,10 @@ if __name__ == "__main__":
         print(f"Servidor corriendo en puerto {PORT}")
         print("Presiona Ctrl+C para detener")
         httpd.serve_forever()
+=======
+Script simple que imprime Hola Mundo
+"""
+ 
+if __name__ == "__main__":
+    print("Hola Mundo")
+>>>>>>> 788f5126043ecff0654f53651c92c6d073e38d8d
